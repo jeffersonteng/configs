@@ -1,0 +1,38 @@
+[user]
+	name = jefferst
+	email = jefferst@amazon.com
+	groups = krew-dev
+[alias]
+	bundle-all = !/home/likewise-open/ANT/jefferst/jeffdev/KCPGitTools/git-bundle-all.py
+	p4-push = !/home/likewise-open/ANT/jefferst/jeffdev/KCPGitTools/git-p4-push.py
+	postreview = !/home/likewise-open/ANT/jefferst/jeffdev/KCPGitTools/git-post-review.py
+	post-review = !/home/likewise-open/ANT/jefferst/jeffdev/KCPGitTools/git-post-review.py
+	scorch = !/home/likewise-open/ANT/jefferst/jeffdev/KCPGitTools/git-scorch.py
+	whatsnew = log HEAD..@{u}
+	notpushed = log @{u}..HEAD
+	mungify = rebase -i @{u}
+	rearrange = rebase -i @{u}
+    logdrop = log --oneline --abbrev-commit --decorate
+	logg = log --graph --date=iso
+	logd = log --pretty=full --date=iso
+	lg = log -10
+	lgf = log
+	ad = add
+	br = branch
+	brC = checkout -b
+	cm = commit -am
+	amn = commit --amend
+	co = checkout
+	df = diff
+	sh = stash
+	st = status
+[format]
+	pretty = %C(yellow)%h %C(cyan)%ae%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%C(blue) %ad%x08%x08%x08%x08%x08%x08%C(reset) %C(magenta bold)%d%C(reset)%C(white)%s
+[color]
+	ui = true
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[push]
+	default = upstream
