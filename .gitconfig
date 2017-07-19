@@ -20,6 +20,7 @@
         cm = commit -am
         co = checkout
         df = diff
+        ds = diff --staged
         sh = stash
         st = status
 [color]
